@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import TextTransition, { presets } from 'react-text-transition';
 import '../styles/globals.css';
@@ -68,25 +69,8 @@ function MyApp({ Component, pageProps }) {
             zIndex: '1',
           }}
         />
-        {/* <MouseParallaxChild
-          factorX={0.5}
-          factorY={0.5}
-          style={{
-            filter: 'invert(1)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 'auto',
-            height: '100%',
-          }}
-        >
-          <img height="50%" src="1.svg" alt="" />
-        </MouseParallaxChild> */}
       </MouseParallaxContainer>
       <div className="">
-        {/* <div className={styles.bg__line}>
-          <img className="line-animation" src={BgLines.src} />
-        </div> */}
         <header className="px-6 lg:px-8 pt-5 header">
           <nav
             className="flex items-center justify-between"
@@ -95,7 +79,13 @@ function MyApp({ Component, pageProps }) {
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className={styles.Header__logo} src={Logo.src} />
+                <Image
+                  src={Logo.src}
+                  alt="Landscape picture"
+                  // className={styles.Header__logo}
+                  width={80}
+                  height={80}
+                />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -123,11 +113,7 @@ function MyApp({ Component, pageProps }) {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-8"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
+                  
                 </a>
                 <button
                   type="button"
@@ -162,7 +148,7 @@ function MyApp({ Component, pageProps }) {
                   <h6>Hello I’m</h6>
                   <h1>Test name</h1>
                   <h2>
-                    A 
+                    A
                     <span>
                       <TextTransition springConfig={presets.wobbly}>
                         {TEXTS[index % TEXTS.length]}
@@ -173,9 +159,9 @@ function MyApp({ Component, pageProps }) {
                     I am a UI/UX developer with expertise in HTML, CSS, and
                     JavaScript. My focus is on user-centered design, creating
                     intuitive and engaging digital experiences that prioritize
-                    the end-user's needs. I am passionate about designing
+                    the end-user&lsquo;s needs. I am passionate about designing
                     beautiful and functional interfaces that make a positive
-                    impact on people's lives.
+                    impact on people&lsquo;s lives.
                   </p>
                 </div>
                 <div className={styles.bottom__Action}>
@@ -183,17 +169,32 @@ function MyApp({ Component, pageProps }) {
                   <ul className={styles.Banner__icons_list}>
                     <li>
                       <a href="#">
-                        <img src={Facebook.src} />
+                        <Image
+                          src={Facebook.src}
+                          alt="Facebook"
+                          width={500}
+                          height={500}
+                        />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src={Linkedin.src} />
+                        <Image
+                          src={Linkedin.src}
+                          alt="Linkedin"
+                          width={500}
+                          height={500}
+                        />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src={Twitter.src} />
+                        <Image
+                          src={Twitter.src}
+                          alt="Twitter"
+                          width={500}
+                          height={500}
+                        />
                       </a>
                     </li>
                   </ul>
