@@ -1,0 +1,102 @@
+.bg__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: -1;
+}
+.bg__line img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Header__logo {
+  height: 80px;
+}
+
+
+.Herozone__Section {
+  min-height: 100vh;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.Left__column {
+  max-width: 800px;
+}
+.Left__column .text__block {
+  margin-bottom: 40px;
+  position: relative;
+}
+.Left__column .text__block h6 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.Left__column .text__block h1 {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.Left__column .text__block h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+  display: flex;
+}
+.Left__column .text__block h2 span {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  font-style: italic;
+  color: #F65823;
+  margin-left: 10px;
+  /* margin-bottom: 20px; */
+}
+.Left__column .text__block p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 42px;
+}
+.bottom__Action {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.Banner__icons_list {
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.Banner__icons_list li {
+  margin-right: 30px;
+}
+.Banner__icons_list li a {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Banner__icons_list li a img {
+  height: 25px
+}
+
+.Banner__swiper_container {
+  
+}
