@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+
+
+
+:root {
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
+  --primary-color: #1D1B1B;
+}
 
 h1,
 h2,
@@ -14,4 +24,39 @@ h6 {
 
 body {
   font-family: var(--font-secondary);
+  overflow-x: hidden;
 }
+
+
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.btn-primary {
+  border-radius: 50px;
+  padding: 20px 30px;
+  background-color: var(--primary-color);
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.swiper-demo-text {
+  display: inline-block;
+  overflow: hidden;
+}
+/* .swiper-wrapper {
+  transform: none !important;
+} */
