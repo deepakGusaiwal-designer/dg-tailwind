@@ -11,6 +11,7 @@ import Logo from '../src/img/logo.svg';
 import Facebook from '../src/img/facebook.svg';
 import Twitter from '../src/img/twitter.svg';
 import Linkedin from '../src/img/linkedin.svg';
+import gred from '../src/img/gred.png';
 
 import { Dialog } from '@headlessui/react';
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -60,7 +61,7 @@ function MyApp({ Component, pageProps }) {
             backgroundPositionY: '50%',
             transform: 'scale(1.1)',
             position: 'absolute',
-            filter: 'opacity(20%) brightness(50%)',
+            filter: 'opacity(50%) brightness(100%)',
             backgroundSize: 'auto',
             backgroundRepeat: 'repeat',
             width: '100%',
@@ -71,7 +72,7 @@ function MyApp({ Component, pageProps }) {
         />
       </MouseParallaxContainer>
       <div className="">
-        <header className="px-6 lg:px-8 pt-5 header">
+        <header className="px-6 lg:px-40 pt-5 header">
           <nav
             className="flex items-center justify-between"
             aria-label="Global"
@@ -141,12 +142,21 @@ function MyApp({ Component, pageProps }) {
           </Dialog> */}
         </header>
         <main>
-          <div className="px-6 lg:px-8">
+          <div className={styles.Bottom__grd}>
+            <Image
+              src={gred.src}
+              alt="Landscape picture"
+              className={styles.Bottom__grd}
+              width={900}
+              height={900}
+            />
+          </div>
+          <div className="px-6 lg:px-40">
             <section className={styles.Herozone__Section}>
               <div className={styles.Left__column}>
                 <div className={styles.text__block}>
                   <h6>Hello I’m</h6>
-                  <h1>Test name</h1>
+                  <h1>Deepak Gusaiwal</h1>
                   <h2>
                     A
                     <span>
@@ -165,10 +175,14 @@ function MyApp({ Component, pageProps }) {
                   </p>
                 </div>
                 <div className={styles.bottom__Action}>
-                  <button className="btn btn-primary">Learn More</button>
+                  <button className="btn btn-primary">Hire Me</button>
                   <ul className={styles.Banner__icons_list}>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.facebook.com/notoriousdeepg/"
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                      >
                         <Image
                           src={Facebook.src}
                           alt="Facebook"
@@ -178,7 +192,11 @@ function MyApp({ Component, pageProps }) {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.linkedin.com/in/deepakgusaiwal/"
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                      >
                         <Image
                           src={Linkedin.src}
                           alt="Linkedin"
@@ -188,7 +206,11 @@ function MyApp({ Component, pageProps }) {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://twitter.com/deepak_gusaiwal"
+                        target={'_blank'}
+                        rel={'noreferrer'}
+                      >
                         <Image
                           src={Twitter.src}
                           alt="Twitter"
