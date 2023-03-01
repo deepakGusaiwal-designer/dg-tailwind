@@ -26,8 +26,19 @@ body {
   font-family: var(--font-secondary);
   overflow-x: hidden;
 }
-
-
+p:focus-visible,
+h1:focus-visible,
+h2:focus-visible,
+h3:focus-visible,
+h4:focus-visible,
+h5:focus-visible,
+h6:focus-visible {
+  outline: none;
+}
+.switcher {
+  position: relative;
+  z-index: 2;
+}
 main {
   position: relative;
 }
@@ -62,3 +73,8 @@ main {
 /* .swiper-wrapper {
   transform: none !important;
 } */
+
+
+.dark #mouse-parallax-container div {
+  opacity: 0.2;
+}

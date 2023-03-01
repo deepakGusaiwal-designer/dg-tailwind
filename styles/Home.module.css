@@ -23,19 +23,38 @@
 }
 
 
+.Custom__cursor {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: #333; */
+}
+.Custom__cursor video {
+  transition: all 0.3s ease;
+  height: 100%;
+  left: -30%;
+  position: relative;
+  filter: blur(150px) saturate(1);
+}
+
+
 .Herozone__Section {
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 107px);
+  gap: 3vw;
   padding-top: 0;
   display: flex;
   align-items: center;
   position: relative;
 }
 .Left__column {
-  max-width: 50vw;
+  max-width: 40vw;
 }
 .Left__column .text__block {
   margin-bottom: 40px;
   position: relative;
+  z-index: 1;
 }
 .Left__column .text__block h6 {
   font-size: 40px;
@@ -109,4 +128,45 @@
   align-items: flex-end;
   pointer-events: none;
   opacity: 0.8;
+}
+
+
+.dark .Banner__icons_list li a img {
+  filter: invert(1);
+}
+
+.Right__content_block {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+}
+.User__image_container {
+  position: relative;
+  padding-bottom: 100%;
+  /* background-color: #F65823; */
+  background: rgb(0, 0, 0);
+  background: linear-gradient(133deg, rgba(0, 0, 0, 1) 51%, rgba(93, 25, 2, 1) 100%);
+  overflow: hidden;
+  border-radius: 2rem;
+}
+.Shapes__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.Shapes__block svg {
+  position: absolute;
+  top: 23%;
+  left: -19%;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2);
+}
+.Avatar__image {
+  position: absolute;
 }
