@@ -42,6 +42,35 @@ h6:focus-visible {
 main {
   position: relative;
 }
+
+.loader__on {
+  position: fixed;
+  z-index: 9999999999;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.loader-video {
+  background-color: #fff;
+  overflow: hidden;
+}
+.loader__on video {
+  width: auto;
+  display: flex;
+  max-width: none;
+  transform: scale(1.1);
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+}
+.loader__on.loading__down {
+  opacity: 0;
+  pointer-events: none;
+}
 /* Header */
 
 .header {
