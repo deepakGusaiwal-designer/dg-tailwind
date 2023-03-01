@@ -55,6 +55,9 @@ main {
   transition: all 0.5s ease-in-out;
 }
 .loader-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   overflow: hidden;
 }
@@ -62,10 +65,10 @@ main {
   width: auto;
   display: flex;
   max-width: none;
-  transform: scale(1.1);
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  height: 100%;
+  /* transform: scale(1.1); */
+  /* aspect-ratio: 16 / 9; */
+  /* width: 100%; */
+  width: 50%;
 }
 .loader__on.loading__down {
   opacity: 0;
@@ -93,6 +96,7 @@ main {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .swiper-demo-text {

@@ -136,7 +136,7 @@ function MyApp({ Component, pageProps }) {
             loop
             muted
             alt="All the devices"
-            src="https://res.cloudinary.com/dpe9quv0o/video/upload/c_scale,w_955/v1677671393/page-loader_sfynxd.webm"
+            src="https://res.cloudinary.com/dpe9quv0o/video/upload/v1677691082/dg__loader_brmvx8.webm"
             ref={videoEl}
           />
         </div>
@@ -211,7 +211,7 @@ function MyApp({ Component, pageProps }) {
                 />
               </a>
             </div>
-            <div className="flex lg:hidden">
+            {/* <div className="flex lg:hidden">
               <button
                 type="button"
                 className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -220,7 +220,7 @@ function MyApp({ Component, pageProps }) {
                 <span className="sr-only">Open main menu</span>
                 asdasda
               </button>
-            </div>
+            </div> */}
             <div className="hidden lg:flex lg:gap-x-12"></div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
               {/* <div className="flex justify-center rounded-3xl p-1 switcher">
@@ -248,7 +248,12 @@ function MyApp({ Component, pageProps }) {
                   {sunIcon}
                 </button>
               </div> */}
-              <a href="#" className="text-lg font-semibold text-gray-800">
+              <a
+                href="https://wa.me/9993933182"
+                target={'_blank'}
+                rel={'noreferrer'}
+                className="text-lg font-semibold text-gray-800"
+              >
                 Say <span className="text-gray-900 font-bold">Hi!</span>
               </a>
             </div>
@@ -322,7 +327,14 @@ function MyApp({ Component, pageProps }) {
                   </p>
                 </div>
                 <div className={styles.bottom__Action}>
-                  <button className="btn btn-primary">Hire Me</button>
+                  <a
+                    href="https://wa.me/9993933182"
+                    target={'_blank'}
+                    rel={'noreferrer'}
+                    className="btn btn-primary"
+                  >
+                    Hire Me
+                  </a>
                   <ul className={styles.Banner__icons_list}>
                     <li>
                       <a
@@ -352,7 +364,7 @@ function MyApp({ Component, pageProps }) {
                         />
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a
                         href="https://twitter.com/deepak_gusaiwal"
                         target={'_blank'}
@@ -365,7 +377,7 @@ function MyApp({ Component, pageProps }) {
                           height={500}
                         />
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

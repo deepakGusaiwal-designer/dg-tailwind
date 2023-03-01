@@ -40,17 +40,18 @@
   filter: blur(150px) saturate(1);
 }
 
-
-.Herozone__Section {
-  min-height: calc(100vh - 107px);
-  gap: 3vw;
-  padding-top: 0;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.Left__column {
-  max-width: 40vw;
+@media (min-width: 767px) {
+  .Herozone__Section {
+    min-height: calc(100vh - 107px);
+    gap: 3vw;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .Left__column {
+    max-width: 40vw;
+  }
 }
 .Left__column .text__block {
   margin-bottom: 40px;
@@ -170,4 +171,11 @@
 }
 .Avatar__image {
   position: absolute;
+}
+
+
+@media (max-width: 767px) {
+  .Herozone__Section {
+    padding: 60px 0;
+  }
 }
