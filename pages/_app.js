@@ -3,19 +3,20 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
 import TextTransition, { presets } from 'react-text-transition';
+import AnimatedText from 'react-animated-text-content';
 import '../styles/globals.css';
 import styles from '../styles/Home.module.css';
 import 'prismjs/themes/prism-tomorrow.css';
 import BgLines from '../src/img/line.svg';
 import Logo from '../src/img/logo.svg';
 import Facebook from '../src/img/facebook.svg';
-import Twitter from '../src/img/twitter.svg';
+// import Twitter from '../src/img/twitter.svg';
 import Linkedin from '../src/img/linkedin.svg';
-import gred from '../src/img/gred.png';
-import Avatar from '../src/img/avatar.png';
+// import gred from '../src/img/gred.png';
+// import Avatar from '../src/img/avatar.png';
 // import BgVideo from '../src/img/BgVideo.webm';
 
-import { Dialog } from '@headlessui/react';
+// import { Dialog } from '@headlessui/react';
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function MyApp({ Component, pageProps }) {
@@ -125,10 +126,10 @@ function MyApp({ Component, pageProps }) {
     attemptPlay();
   }, []);
 
-  
+
   return (
     <>
-      <div className={loading ? 'loader__on' : 'loader__on loading__down'}>
+      {/* <div className={loading ? 'loader__on' : 'loader__on loading__down'}>
         <div className="loader-video">
           <video
             autoPlay
@@ -140,7 +141,7 @@ function MyApp({ Component, pageProps }) {
             ref={videoEl}
           />
         </div>
-      </div>
+      </div> */}
       <div className={styles.Bg__video_block}>
         <div className={styles.Custom__cursor}>
           <video
@@ -317,14 +318,39 @@ function MyApp({ Component, pageProps }) {
                       </TextTransition>
                     </span>
                   </h2>
-                  <p>
+                  <AnimatedText
+                    type="words" // animate words or chars
+                    animation={{
+                      x: '200px',
+                      y: '-20px',
+                      scale: 1.1,
+                      ease: 'ease-in-out',
+                    }}
+                    animationType="float"
+                    interval={0.06}
+                    duration={0.8}
+                    tag="p"
+                    className="animated-paragraph"
+                    // includeWhiteSpaces
+                    threshold={0.1}
+                    rootMargin="20%"
+                  >
                     I am a UI/UX developer with expertise in HTML, CSS, and
                     JavaScript. My focus is on user-centered design, creating
                     intuitive and engaging digital experiences that prioritize
                     the end-user&lsquo;s needs. I am passionate about designing
                     beautiful and functional interfaces that make a positive
                     impact on people&lsquo;s lives.
-                  </p>
+                  </AnimatedText>
+                  ;
+                  {/* <p>
+                    I am a UI/UX developer with expertise in HTML, CSS, and
+                    JavaScript. My focus is on user-centered design, creating
+                    intuitive and engaging digital experiences that prioritize
+                    the end-user&lsquo;s needs. I am passionate about designing
+                    beautiful and functional interfaces that make a positive
+                    impact on people&lsquo;s lives.
+                  </p> */}
                 </div>
                 <div className={styles.bottom__Action}>
                   <a
