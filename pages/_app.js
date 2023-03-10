@@ -150,7 +150,7 @@ function MyApp({ Component, pageProps }) {
             muted
             controls
             alt="All the devices"
-            src="https://res.cloudinary.com/dpe9quv0o/video/upload/v1677656199/BgVideo_epbfpg.webm"
+            src="https://res.cloudinary.com/dpe9quv0o/video/upload/v1677691082/dg__loader_brmvx8.webm"
             ref={videoEl}
             style={{
               // transform: `translateX(${x}px) translateY(${y}px)`,
@@ -159,6 +159,7 @@ function MyApp({ Component, pageProps }) {
           />
         </div>
       </div>
+      
       {/* <h1>{`x: ${x}; y: ${y};`}</h1> */}
       {/* <span className="theme-bejamas" /> */}
       {/* <Component {...pageProps} /> */}
@@ -318,39 +319,14 @@ function MyApp({ Component, pageProps }) {
                       </TextTransition>
                     </span>
                   </h2>
-                  <AnimatedText
-                    type="words" // animate words or chars
-                    animation={{
-                      x: '200px',
-                      y: '-20px',
-                      scale: 1.1,
-                      ease: 'ease-in-out',
-                    }}
-                    animationType="float"
-                    interval={0.06}
-                    duration={0.8}
-                    tag="p"
-                    className="animated-paragraph"
-                    // includeWhiteSpaces
-                    threshold={0.1}
-                    rootMargin="20%"
-                  >
+                  <p>
                     I am a UI/UX developer with expertise in HTML, CSS, and
                     JavaScript. My focus is on user-centered design, creating
                     intuitive and engaging digital experiences that prioritize
                     the end-user&lsquo;s needs. I am passionate about designing
                     beautiful and functional interfaces that make a positive
                     impact on people&lsquo;s lives.
-                  </AnimatedText>
-                  ;
-                  {/* <p>
-                    I am a UI/UX developer with expertise in HTML, CSS, and
-                    JavaScript. My focus is on user-centered design, creating
-                    intuitive and engaging digital experiences that prioritize
-                    the end-user&lsquo;s needs. I am passionate about designing
-                    beautiful and functional interfaces that make a positive
-                    impact on people&lsquo;s lives.
-                  </p> */}
+                  </p>
                 </div>
                 <div className={styles.bottom__Action}>
                   <a
